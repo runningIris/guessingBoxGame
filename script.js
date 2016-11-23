@@ -7,11 +7,14 @@ for(let i=0; i<num; i++){
 	box.className = 'box';
 	container.appendChild(box);
 	box.addEventListener('click', function(){
+		index += 1;
 		if(i == destiny){
-			console.log(`Congratulations, this is the box! It takes you ${index} times to guess it`);
+			box.className += ' guessed';
+			alert(`Congratulations, this is the box! It takes you ${index} times to guess it`);
 		} else{
+			box.className += ' wrongGuess'
 			console.log('Sorry, this is not the box.');
-			index += 1;
+			
 		}
 	});
 }

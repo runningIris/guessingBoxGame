@@ -1,3 +1,7 @@
+h1.title{
+	color: pink;
+	text-align: center;
+}
 .container{
 	width: 1000px;
 	height: auto;
@@ -6,8 +10,21 @@
 }
 .box{
 	width: 200px;
-	height: 200px;
-	margin: 20px;
+	height: 150px;
+	margin: 23px;
 	background-color: #fff;
 	display: inline-block;
+	background-image: url('simba.jpg');
+	background-position: -10px, -10px;
+	border-radius: 10px;
+}
+.guessed{
+	background-size: contain;
+	background-image: url('nana.jpg');
+	background-position: 5px;
+	width: 170px;
+}
+.wrongGuess{
+	background-size: cover;
+	background-image: url('friends.jpg');
 }
