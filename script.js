@@ -1,5 +1,9 @@
 function guessBox(){
-	let num = prompt('How many friends do you want?');
+	var num = prompt('How many friends do you want? (Please write down a number between 1~20)');
+	while(!(parseInt(num) > 0) || num > 20){
+		num = prompt('Please write down a number between 1~20...')
+	}
+	
 	let destiny = Math.floor(Math.random() * num);
 	let index = 0;
 
