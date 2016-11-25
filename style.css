@@ -1,11 +1,4 @@
-@media screen and (max-width: 1300px) {
-	h1{
-		font-size: 100px;
-	}
-	h2{
-		font-size: 60px;
-	}
-}
+
 
 h1.title{
 	color: pink;
@@ -58,4 +51,22 @@ h1.title{
 
 .restart:hover{
 	background-color: rgb(69,100,207);
+}
+
+@media screen and (max-width: 1300px) {
+	h1{
+		font-size: 100px;
+	}
+	h2{
+		font-size: 60px;
+	}
+	.box,.guessed,.wrongGuess{
+		background-size: cover;
+		width: 400px;
+		height: 300px;
+	}
+	.restart{
+		width: 200px;
+		height: 60px;
+	}
 }
